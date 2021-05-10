@@ -39,35 +39,33 @@ class _MyAppState extends State<MyApp> {
               end: Alignment.topCenter,
               tileMode: TileMode.clamp)),
       child: Scaffold(
+        appBar: AppBar(
+          title: Text('Skardu Valley'),
+          leading: GestureDetector(
+          onTap: () {},
+          child: Icon(
+          Icons.menu,
+          size: 26.0,
+    ),
+  ),
+          backgroundColor: Colors.transparent,
+          actions: <Widget>[
+    Padding(
+      padding: EdgeInsets.only(right: 15.0),
+      child: GestureDetector(
+        onTap: () {},
+        child: Icon(
+          Icons.search,
+          size: 26.0,
+        ),
+      )
+    ),
+          ],
+        ),
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.only(
-                    left: 12.0, right: 12.0, top: 30.0, bottom: 8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    IconButton(
-                      icon: Icon(
-                        CustomIcons.menu,
-                        color: Colors.white,
-                        size: 30.0,
-                      ),
-                      onPressed: () {},
-                    ),
-                    IconButton(
-                      icon: Icon(
-                        Icons.search,
-                        color: Colors.white,
-                        size: 30.0,
-                      ),
-                      onPressed: () {},
-                    )
-                  ],
-                ),
-              ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.0),
                 child: Row(
@@ -76,14 +74,14 @@ class _MyAppState extends State<MyApp> {
                     Text("Tourist Spots GB",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 33.0,
+                          fontSize: 31.0,
                           fontFamily: "Calibre-Semibold",
                           letterSpacing: 0.0,
                         )),
                     IconButton(
                       icon: Icon(
                         CustomIcons.option,
-                        size: 12.0,
+                        size: 11.0,
                         color: Colors.white,
                       ),
                       onPressed: () {},
