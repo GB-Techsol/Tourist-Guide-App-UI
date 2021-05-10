@@ -1,4 +1,6 @@
 List<String> images = [
+  "assets/image_09.jpg",
+  "assets/image_08.jpg",
   "assets/image_07.jpg",
   "assets/image_04.jpg",
   "assets/image_03.jpg",
@@ -7,6 +9,8 @@ List<String> images = [
 ];
 
 List<String> title = [
+  "Saling Bagh",
+  "Shigar Fort",
   "Sadpara lake",
   "Manthoka WaterFall",
   "Deosai Plane",

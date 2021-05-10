@@ -60,6 +60,16 @@ class _MyAppState extends State<MyApp> {
         ),
       )
     ),
+    Padding(
+      padding: EdgeInsets.only(right: 15.0),
+      child: GestureDetector(
+        onTap: () {},
+        child: Icon(
+          Icons.settings,
+          size: 26.0,
+        ),
+      )
+    ),
           ],
         ),
         backgroundColor: Colors.transparent,
